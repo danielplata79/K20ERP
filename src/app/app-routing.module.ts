@@ -5,7 +5,8 @@ import { LoginComponent } from './shared/components/login/login.component';
 const routes: Routes = [
     { path: "", redirectTo: "login", pathMatch: "full" },
     { path: "login", component: LoginComponent },
-    { path: "dashboard", loadChildren: () => import('./shared/components/dashboard/dashboard.module').then(x => x.DashboardModule)}, // Lazy Load
+    //{ path: "dashboard", component: dashb }.
+    { path: 'dashboard', loadChildren: () => import('./shared/components/dashboard/dashboard.module').then(x => x.DashboardModule) },  // Lazy Load
     { path: "**", redirectTo: "login", pathMatch: "full" }
 ];
 

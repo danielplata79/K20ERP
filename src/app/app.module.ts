@@ -10,17 +10,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
 // Components 
-import { HeaderComponent } from './shared/components/header/header.component';
 import { LoginComponent } from './shared/components/login/login.component';
 import { SharedModule } from './shared/components/shared/shared.module';
-import { DashboardComponent } from './shared/components/dashboard/dashboard.component';
+// import { DashboardComponent } from './shared/components/dashboard/dashboard.component';
+
+// Modules
+//import { DashboardModule } from './shared/components/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     LoginComponent,
-    DashboardComponent,
+    //DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,8 @@ import { DashboardComponent } from './shared/components/dashboard/dashboard.comp
 	  FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    SharedModule
+    SharedModule,
+    //DashboardModule
   ],
   exports: [
   ],

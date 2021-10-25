@@ -1,0 +1,37 @@
+<p>
+    <mat-toolbar color="primary" class="">
+      <mat-toolbar-row>
+
+        <mat-drawer-container class="example-container" autosize>
+            <mat-drawer #drawer class="example-sidenav" mode="side" class="qlq">
+              <p>Auto-resizing sidenav</p>
+              <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+              <button (click)="showFiller = !showFiller" mat-raised-button>
+                Toggle extra text
+              </button>
+            </mat-drawer>
+          
+            <div class="example-sidenav-content">
+              <button mat-mini-fab color="primary" class="menu" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+              </button>
+            </div>
+          </mat-drawer-container>
+
+        <span>MAIA ERP - Pedidos Ft. Angular</span> 
+        <button mat-button color="primary">sadsa</button>
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </p>
+
+  <div class="big"></div>
+
+  <!-- <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+    <mat-drawer-content>Main content</mat-drawer-content>
+  </mat-drawer-container>
+   -->
+
+
+  
