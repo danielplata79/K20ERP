@@ -23,3 +23,9 @@
 .spinner {
     margin: auto;
 }
+
+form {
+    background: lightslategray;
+    padding: 40px;
+    border-radius: 10px;
+}

@@ -4,7 +4,6 @@
 
         <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="ingresar()">
             <img src="assets/img/login/icon-user.png">
-            <h1>Login</h1>
             <mat-form-field appearence="fill" class="ancho">
                 <mat-label>User</mat-label>
                 <input matInput autocomplete="off" formControlName="user" type="text">
