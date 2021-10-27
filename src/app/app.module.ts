@@ -12,7 +12,6 @@ import { MaterialModule } from './material.module';
 // Components 
 import { LoginComponent } from './shared/components/login/login.component';
 import { SharedModule } from './shared/components/shared/shared.module';
-// import { DashboardComponent } from './shared/components/dashboard/dashboard.component';
 
 // Modules
 //import { DashboardModule } from './shared/components/dashboard/dashboard.module';

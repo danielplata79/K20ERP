@@ -28,4 +28,14 @@ form {
     background: lightslategray;
     padding: 40px;
     border-radius: 10px;
+    -webkit-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+}
+
+form img {
+    border-radius: 72px;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.60);
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.60);
 }

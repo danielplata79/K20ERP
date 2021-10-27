@@ -25,17 +25,25 @@
 
   .qlq {
       position: fixed;
-      background-color: red;
+      background-color: lightblue;
       height: 100%;
       left: 0px;
-  }
-
-  .big {
-    background-color: orange;
-    height: 900px;
-
+      padding: 30px;
+      -webkit-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
+      -moz-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
+      box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.60);
   }
 
   mat-toolbar span {
     margin-left: 50px;
+  }
+
+  .mat-fab:not([class*="mat-elevation-z"]), .mat-mini-fab:not([class*="mat-elevation-z"]) {
+    box-shadow: none;
+  }
+
+  mat-toolbar {
+    -webkit-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
+    box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.60);
   }
