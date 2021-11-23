@@ -8,7 +8,7 @@
     box-shadow: none;
     border: none;
     border-radius: 30px;
-    overflow: hidden;
+    height: 100%;
  }
   
   .example-sidenav-content {
@@ -17,15 +17,10 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .example-sidenav {
-    padding: 50px;
-    background-color: lightblue;
-  }
 
   .qlq {
       position: fixed;
-      background-color: lightblue;
+      background-color: #3f51b5;
       height: 100%;
       left: 0px;
       padding: 30px;

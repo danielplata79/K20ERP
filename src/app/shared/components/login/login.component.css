@@ -1,41 +1,163 @@
-.body {
+body {
     display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    background-color:#FAFAFA;
+    background-image: url("./../../../../assets/img/login/bg-img2.jpg");
 }
 
+mat-toolbar {
+    position: absolute;
+    background-color: #24242a !important;
+    -webkit-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);;
+}
+
+mat-toolbar h1 {
+    color:#24242a;
+    margin-left: 50px;
+    background-color: #90cda3;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+}
+
+#description {
+    width: 60%;
+    padding: 50px;
+    color: white;
+    background-color: #24242a;
+    -webkit-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);;
+    margin: auto;
+}
+
+#description h1 {
+    color: #90cda3;
+}
+
+#description p {
+    color: lightcyan;
+}
+
+
+
 .login {
-    width:50%;
+    margin: auto;
+    width:100%;
     max-width: 330px;
     text-align: center;
+    align-items: flex start; 
 }
 
 .login img {
     width: 140px;
 }
 
-.ancho {
-    width: 80%;
-}
-
-.spinner {
-    margin: auto;
-}
-
 form {
-    background: lightslategray;
+    background-color: #24242a;
     padding: 40px;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 4px;
     -webkit-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
     -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
     box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
-}
+}  
 
 form img {
-    border-radius: 72px;
+    border-radius: 5px;
+    width: 100% !important;
     -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.60);
     -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.60);
     box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.60);
+    filter: brightness(60%);
 }
+
+    /* Angular Material Customized Input  */
+    /* Change label color on focused */
+    ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+        color: #90cda3 !important;
+    }
+    
+    /* underline border color on focused */
+    ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+        background-color: #90cda3 !important;
+    }
+
+
+    ::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+        background-color: #90cda3 !important;
+        color: darkcyan !important;
+        background-color: darkcyan;
+    }
+    
+    ::ng-deep .mat-form-field-empty.mat-form-field-label {
+        color: darkcyan;
+    }
+
+    ::ng-deep .mat-form-field-ripple {
+        background-color: orange; 
+    }
+
+    form mat-icon {
+        color: white !important
+    }
+    ::ng-deep mat-form-field span.mat-form-field-label-wrapper label {
+        color:white !important;
+    }
+
+    .mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+        /* background-color: #3a8c5c; */
+        background-color: #90cda3; 
+        -webkit-box-shadow: 0px 0px 13px 0px rgba(144,205,163,1);
+        -moz-box-shadow: 0px 0px 13px 0px rgba(144,205,163,1);
+        box-shadow: 0px 0px 13px 0px rgba(144,205,163,1);
+    }
+
+    .mat-raised-button.mat-button-disabled:not([class*="mat-elevation-z"]) {
+        background: #90cda3;   
+    }
+
+    input {
+        color: white;
+    }
+
+    #button {
+        color: #24242a
+    }
+        /* End Custom Input - Form */
+
+
+
+
+/* MEDIA QUERYS */
+@media only screen and (max-width: 1327px) {
+    body {
+        display: block;
+        padding-top: 30px;
+    }
+
+    mat-toolbar {
+        margin-top: -31px;
+    }
+
+    #description {
+        width: 80% ;
+        height: 30%;
+        margin-top: 80px !important;
+        overflow: auto;
+        margin: auto;
+    }
+
+    .login {
+        margin: auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+      #description {
+          width: 70%;
+      }
+  }

@@ -3,7 +3,7 @@
       <mat-toolbar-row>
 
         <mat-drawer-container class="example-container" autosize>
-            <mat-drawer #drawer class="example-sidenav" mode="side" class="qlq">
+            <mat-drawer #drawer class="example-sidenav" mode="side" class="qlq" color="primary">
               <p>Menu</p>
               <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
               <button (click)="showFiller = !showFiller" mat-raised-button>
@@ -11,7 +11,7 @@
               </button>
             </mat-drawer>
           
-            <div class="example-sidenav-content">
+            <div class="example-sidenav-content" color="primary">
               <button mat-mini-fab color="primary" class="menu" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
                 <mat-icon>menu</mat-icon>
               </button>
@@ -24,14 +24,3 @@
       </mat-toolbar-row>
     </mat-toolbar>
   </p>
-
-  <div class="big"></div>
-
-  <!-- <mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
-    <mat-drawer-content>Main content</mat-drawer-content>
-  </mat-drawer-container>
-   -->
-
-
-  
