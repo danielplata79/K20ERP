@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%; background-image: url("assets/img/login/bg-img2.jpg");  }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-toolbar {
+    position: absolute;
+    background-color: #24242a !important;
+    -webkit-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);;
+}
+
+mat-toolbar h1 {
+    color:#24242a;
+    margin-left: 50px;
+    background-color: #90cda3;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+}

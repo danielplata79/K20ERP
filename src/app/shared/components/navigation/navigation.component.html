@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">    
+    <mat-toolbar-row>
+
+        <mat-drawer-container class="example-container" autosize>
+            <mat-drawer #drawer class="example-sidenav" mode="side" class="qlq" color="primary">
+              <img src="../../../../assets/img/login/bg-img2.jpg">
+              <br>
+              <div class="menu-dashboard">
+                <div class="menu-links">
+                    <img src="../../../../assets/img/login/contacts-64.png" alt="">
+                    <span>
+                        <a routerLink="/login">Login & Sign Up</a>
+                    </span>
+                </div>
+
+                <div class="menu-links">
+                    <img src="../../../../assets/img/login/database-5-64.png" alt="">
+                    <a href="/dashboard">Dashboard</a>
+                </div>
+
+                <div class="menu-links">
+                    <img src="../../../../assets/img/login/info-64.png" alt="">
+                    <a href="/information">Information</a>
+                </div>
+
+                <div class="menu-links">
+                    <img src="../../../../assets/img/login/github64.png" alt="">
+                    <a href="https://www.github.com/danielplata79" target="_blank">Github</a>
+                </div>
+              </div>
+
+              <div id="footer-nav">
+                  <p>Copyright ® DP</p>
+              </div>
+            </mat-drawer>
+          
+            <div class="example-sidenav-content" color="primary">
+              <button mat-mini-fab class="menu" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+              </button>
+            </div>
+          </mat-drawer-container>
+
+        <h1>Simple ERP Ft. Angular</h1>
+
+        <span><h2>{{ currentForm }}</h2></span> 
+        <button mat-button color="primary">sadsa</button>
+
+      </mat-toolbar-row>
+</mat-toolbar>

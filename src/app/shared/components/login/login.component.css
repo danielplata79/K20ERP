@@ -1,28 +1,11 @@
 body {
     display: flex;
-    background-image: url("./../../../../assets/img/login/bg-img2.jpg");
-}
-
-mat-toolbar {
-    position: absolute;
-    background-color: #24242a !important;
-    -webkit-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
-    -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
-    box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);;
-}
-
-mat-toolbar h1 {
-    color:#24242a;
-    margin-left: 50px;
-    background-color: #90cda3;
-    padding: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 2px;
+    height: 100%;
 }
 
 #description {
     width: 60%;
+    height: 70%;
     padding: 50px;
     color: white;
     background-color: #24242a;
@@ -30,6 +13,7 @@ mat-toolbar h1 {
     -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
     box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);;
     margin: auto;
+    overflow: auto;
 }
 
 #description h1 {
@@ -39,8 +23,6 @@ mat-toolbar h1 {
 #description p {
     color: lightcyan;
 }
-
-
 
 .login {
     margin: auto;
@@ -52,6 +34,20 @@ mat-toolbar h1 {
 
 .login img {
     width: 140px;
+}
+
+.login div {
+    background-color: #90cda3;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
+    box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);
 }
 
 form {
@@ -73,7 +69,7 @@ form img {
     filter: brightness(60%);
 }
 
-    /* Angular Material Customized Input  */
+ /* Angular Material Customized Input  */
     /* Change label color on focused */
     ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
         color: #90cda3 !important;
@@ -125,20 +121,18 @@ form img {
     #button {
         color: #24242a
     }
-        /* End Custom Input - Form */
+ /* End Custom Input - Form */
 
-
-
+ .spinner {
+    margin: 0 auto;
+    margin-top: 50px;
+}
 
 /* MEDIA QUERYS */
 @media only screen and (max-width: 1327px) {
     body {
         display: block;
         padding-top: 30px;
-    }
-
-    mat-toolbar {
-        margin-top: -31px;
     }
 
     #description {
@@ -149,15 +143,42 @@ form img {
         margin: auto;
     }
 
+    .spinner {
+        margin-top: 200px;
+    }
+
     .login {
         margin: auto;
         margin-top: 50px;
         width: 100%;
     }
-  }
+
+
+}
+
+@media only screen and (max-width: px) and (min-width: 1328px) {
+    .login {
+        margin-top: 50px;
+    }  
+
+    #description {
+        margin-top: 50px;
+    }
+}
 
   @media only screen and (max-width: 660px) {
       #description {
           width: 70%;
       }
+}
+
+  @media only screen and (min-height: 404px) {
+      #description {
+          margin-top: 100px;
+      }
   }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+

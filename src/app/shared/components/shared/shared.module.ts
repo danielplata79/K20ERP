@@ -12,7 +12,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; 
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatSidenavModule} from '@angular/material/sidenav'; 
-
+import { MatTableModule } from '@angular/material/table';
+import {MatExpansionModule} from '@angular/material/expansion'; 
+import {MatDialogModule} from '@angular/material/dialog'; 
 
 @NgModule({
   declarations: [],
@@ -25,7 +27,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTableModule,
+    MatExpansionModule,
+    MatDialogModule,
   ],
   exports: [
     ReactiveFormsModule,
@@ -37,7 +42,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTableModule,
+    MatExpansionModule,
+    MatDialogModule
   ]
 })
 export class SharedModule { }

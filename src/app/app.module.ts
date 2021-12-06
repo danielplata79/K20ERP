@@ -12,15 +12,19 @@ import { MaterialModule } from './material.module';
 // Components 
 import { LoginComponent } from './shared/components/login/login.component';
 import { SharedModule } from './shared/components/shared/shared.module';
+import { NavigationComponent } from './shared/components/navigation/navigation.component';
+import { InformationComponent } from './shared/components/information/information.component';
+import { UsersComponent } from './shared/components/dashboard/users/users.component';
 
 // Modules
-//import { DashboardModule } from './shared/components/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    //DashboardComponent,
+    NavigationComponent,
+    InformationComponent
+      //DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,9 +36,11 @@ import { SharedModule } from './shared/components/shared/shared.module';
     //DashboardModule
   ],
   exports: [
+    // NavigationComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[UsersComponent]
 })
 
 export class AppModule { }

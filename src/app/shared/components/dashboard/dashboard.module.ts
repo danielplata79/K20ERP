@@ -8,6 +8,9 @@ import { StartComponent } from './start/start.component';
 import { DataComponent } from './data/data.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { NavigationComponent } from '../navigation/navigation.component';
+import { UsersComponent } from './users/users.component';
+import { NewUserComponent } from './users/new-user/new-user.component';
 
 
 @NgModule({
@@ -16,12 +19,18 @@ import { HeaderComponent } from './header/header.component';
     StartComponent,
     DataComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    UsersComponent,
+    NewUserComponent,
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule
+    SharedModule,
+    // NavigationComponent
+  ],
+  exports: [
+    
   ]
 })
 export class DashboardModule { }
