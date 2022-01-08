@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   form: FormGroup;
   loading = false;
   showFiller = false;
-  currentFormCompo = "Home Page";
+  currentFormCompo = "Home";
 
   constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router) {
     this.form = this.fb.group({

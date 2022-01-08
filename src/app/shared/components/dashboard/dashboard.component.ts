@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import { UsersComponent } from './users/users.component';
 import {MatDialog, MatDialogConfig, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { NewUserComponent } from './users/new-user/new-user.component';
 
 
 // Table Data
@@ -61,14 +62,17 @@ export class DashboardComponent implements OnInit {
   // End Table Data
 
   constructor(private dialog: MatDialog) { 
-
   }
 
   ngOnInit(): void {
   }
 
+  // PopUps 
+
   onCreate() {
-    this.dialog.open(UsersComponent);
+    this.dialog.open(NewUserComponent, {
+      // backdropClass: 'backdropBackground' // This is the "wanted" line
+    });
   }
 
   onDelete() {

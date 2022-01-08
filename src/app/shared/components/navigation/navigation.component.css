@@ -5,9 +5,9 @@ mat-toolbar {
     box-shadow: 7px 8px 2px 1px rgba(0,0,0,0.60);;
 }
 
-mat-toolbar h1 {
+#current-form {
     color:#24242a;
-    margin-left: 50px;
+    margin-left:  30px;
     background-color: #90cda3;
     padding: 4px;
     padding-left: 10px;
@@ -97,9 +97,12 @@ mat-toolbar h1 {
         padding-left: 5px;
     }
 
-  mat-toolbar span {
-    margin-left: 50px;
-  }
+    mat-toolbar  h2 {
+        margin:auto;
+        margin-right: 30px;
+        float: right;
+        right: 0;
+      }
 
   .mat-fab:not([class*="mat-elevation-z"]), .mat-mini-fab:not([class*="mat-elevation-z"]) {
     box-shadow: none;
