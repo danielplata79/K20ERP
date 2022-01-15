@@ -1,5 +1,5 @@
 #icon-action {
-  background-color: darkslategrey;
+  background-color: #24242a;
   width: 90%;
   height: 60px;
   margin: auto;
@@ -26,7 +26,7 @@ button {
 }
 
 button:hover {
-  background-color: #24242a;
+  background-color: darkgoldenrod;
   color: white;
   transition: 0.3s;
 }
@@ -57,7 +57,7 @@ button:hover {
     height: 75%;
     width: 90%;
     margin: auto;
-    background-color: darkslategray;
+    background-color: white;
     -webkit-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
     -moz-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
     box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.60);
@@ -67,7 +67,6 @@ button:hover {
  
  table {
     width: 100%;
-    position: ;
     margin: auto;
     box-shadow: none;
   }
@@ -81,8 +80,8 @@ button:hover {
 
   table td {
     text-align: center;
-    background-color: darkslategray;
-    color: white;
+    background-color: lightgray;
+    color: #24242a;
   }
 
   #mat-dialog-0 {

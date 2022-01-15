@@ -1,5 +1,5 @@
 #mat-dialog-0 {
-    background-color: darkslategray !important;
+    background-color: lightgray !important;
     text-align: left;
     color: #fff;
 }
@@ -13,35 +13,36 @@ h2 {
 }
 
 hr {
-    color: #24242a;
+    color: lightgray;
     margin-bottom: 20px;
     margin-top: 20px;
     width: 100%;
 }
 
 button {
-    background-color: #24242a !important;
+    background-color: #90cda3 !important;
     -webkit-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
     -moz-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
     box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.30);
     margin-left: 10px;
     width: 100px;
+    color: black !important;
   }
   
   button:hover {
-    background-color: #90cda3 !important;
+    background-color: darkgoldenrod !important;
     color: #24242a;
     transition: 0.3s;
   }
 
 ::ng-deep #mat-dialog-0 {
-    background-color: darkslategray !important;
+    background-color: #212124 !important;
     text-align: left;
     color: #fff;
 }
 
 mat-dialog-container {
-    background-color: darkslategray !important;
+    background-color: lightgray !important;
     text-align: left;
     color: #fff !important;
 }
@@ -72,4 +73,5 @@ form input {
 
   #action-buttons button {
       margin: auto;
+
   }
