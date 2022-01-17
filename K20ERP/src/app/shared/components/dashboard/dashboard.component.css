@@ -1,0 +1,99 @@
+#icon-action {
+  background-color: #24242a;
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  margin-top: 30px;
+  -webkit-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
+  -moz-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
+  box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.30);
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+#icon-action mat-icon {
+  margin-top: -3px !important;
+}
+
+button {
+  background-color: #90cda3;
+  -webkit-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
+  -moz-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
+  box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.30);
+  margin-left: 10px;
+  height: 34px;
+}
+
+button:hover {
+  background-color: darkgoldenrod;
+  color: white;
+  transition: 0.3s;
+}
+
+  input {
+    background-color: lightgray;
+    border-radius: 5px;
+    color: #24242a;
+    height: 30px;
+    width: 300px;
+    margin: auto;
+    border: 1px solid #24242a !important;
+    -webkit-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.20);
+    -moz-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.20);
+    box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.20);
+    margin-right: 0;
+    padding-left: 10px;
+  }
+
+  ::placeholder {
+    padding-left: 20px ;
+    margin-left: 20px;
+    color: #000;
+  }
+
+/* TABLE */
+  #data-table {
+    height: 75%;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    -webkit-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
+    box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.60);
+    overflow: auto;
+    margin-top: 30px;
+  }
+ 
+ table {
+    width: 100%;
+    margin: auto;
+    box-shadow: none;
+  }
+
+  table th {
+    background-color: #24242a;
+    color: #90cda3;
+    text-align: center;
+    border: 1 px solid #90cda3 !important;
+  }
+
+  table td {
+    text-align: center;
+    background-color: lightgray;
+    color: #24242a;
+  }
+
+  #mat-dialog-0 {
+    background-color: darkslategray !important;
+    text-align: left;
+    color: #fff;
+}
+
+:host {
+  background: blue;
+}
+
+.backdropBackground {
+  background-color: red;
+}

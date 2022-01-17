@@ -1,0 +1,77 @@
+#mat-dialog-0 {
+    background-color: lightgray !important;
+    text-align: left;
+    color: #fff;
+}
+
+h2 {
+    color:  #90cda3;
+    background-color: #24242a;
+    text-align: center;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+hr {
+    color: lightgray;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    background-color: #90cda3 !important;
+    -webkit-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
+    -moz-box-shadow: 1 0px 5px 1px rgba(0,0,0,0.30);
+    box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.30);
+    margin-left: 10px;
+    width: 100px;
+    color: black !important;
+  }
+  
+  button:hover {
+    background-color: darkgoldenrod !important;
+    color: #24242a;
+    transition: 0.3s;
+  }
+
+::ng-deep #mat-dialog-0 {
+    background-color: #212124 !important;
+    text-align: left;
+    color: #fff;
+}
+
+mat-dialog-container {
+    background-color: lightgray !important;
+    text-align: left;
+    color: #fff !important;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+
+}
+
+form input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+    color: #000;
+  }
+
+  #action-buttons {
+      display: flex;
+      width: 100%;
+  }
+
+  #action-buttons button {
+      margin: auto;
+
+  }
