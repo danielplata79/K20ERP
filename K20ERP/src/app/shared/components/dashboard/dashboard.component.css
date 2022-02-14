@@ -52,12 +52,12 @@ button:hover {
     color: #000;
   }
 
-/* TABLE */
+  /* TABLE */
   #data-table {
     height: 75%;
     width: 90%;
     margin: auto;
-    background-color: white;
+    background-color: lightgray;
     -webkit-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
     -moz-box-shadow: 1 0px 10px 1px rgba(0,0,0,0.60);
     box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.60);
@@ -75,7 +75,7 @@ button:hover {
     background-color: #24242a;
     color: #90cda3;
     text-align: center;
-    border: 1 px solid #90cda3 !important;
+    font-weight: bold;
   }
 
   table td {
@@ -90,10 +90,6 @@ button:hover {
     color: #fff;
 }
 
-:host {
-  background: blue;
-}
-
-.backdropBackground {
-  background-color: red;
+.uppercase-celd {
+  text-transform: uppercase;
 }

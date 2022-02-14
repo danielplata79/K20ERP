@@ -12,18 +12,20 @@ export class NewUserComponent implements OnInit {
   constructor(private UserService:UserService ) { }
 
   ngOnInit(): void {
-    this.listUser();
+    this.listUsers();
   }
 
   // List Users
-  listUser() 
+  listUsers() 
   {
-    this.UserService.getUser().subscribe(
+    this.UserService.getUsers().subscribe(
       res=>{
         console.log(res)
       },
       err => console.log(err)
     );
   }
+
+
   
 }

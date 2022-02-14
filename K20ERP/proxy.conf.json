@@ -2,9 +2,5 @@
     "/api/*": {
      "target": "http://localhost:3000",
      "secure": false
-    },
-    "/__/*": {
-      "target": "http://localhost:3100",
-      "secure": false
     }
-  }
+}
