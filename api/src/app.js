@@ -10,7 +10,10 @@ const concurrently = require("concurrently");
 
 console.log("");
 console.log("---------------------------------------------------------------");
-console.log(figlet.textSync("K20 ERP - API"));
+console.log("");
+// console.log(figlet.textSync("K20 ERP - API"));
+console.log("  ✔ API   = ✅ Compilado exitosamente.")
+console.log("");
 console.log("---------------------------------------------------------------");
 console.log("");
 
@@ -47,7 +50,7 @@ app.use('/api', require('./routes/index'));
  const connection = mysql2.createConnection({
 	host: 'localhost',
 	user: 'root',
-	password: 'sl4yer',
+	password: 'root',
 	port: '3306',
 	database: 'crudex'
  });

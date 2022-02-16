@@ -5,7 +5,7 @@ const mysql2 = require("mysql2");
 const connection = mysql2.createConnection({
 	host: 'localhost',
 	user: 'root',
-	password: 'sl4yer',
+	password: 'root',
 	port: '3306',
 	database: 'crudex'
  });
@@ -39,9 +39,9 @@ router.get("/", (req, res) => {
 
 // Agregando 
 router.post("/", (req, res) => {
-	const { username, password } = req.body;
+	const { nombre, apellido } = req.body;
 
-	let sql = `insert into users(username, password) values('${username}', '${password}')`
+	let sql = `insert into clientes(nombre, apellido) values('${nombre}', '${apellido}')`
 
 	connection.query(sql, (err, rows, fields) => {
 		if(err) throw err;
@@ -53,7 +53,7 @@ router.post("/", (req, res) => {
 
 // Eliminando 
 router.delete("/:id", (req, res) => {
-	const {id} = req.params
+	const {id} = req.params;
 
 	let sql = `DELETE FROM clientes where id = '${id}'`
 	connection.query(sql, (err, rows, fiels) => {
