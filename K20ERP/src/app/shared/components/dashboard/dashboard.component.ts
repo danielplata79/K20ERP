@@ -40,6 +40,9 @@ export class DashboardComponent implements OnInit {
     {
       this.UserService.getUsers().subscribe(
         res => {
+          var a = res;
+          console.log("reading from here!");
+          console.log("La respuesta es a = " + a);
           console.log(res);
           this.ListUser=<any>res;
           this.dataSource.data = res as User[];

@@ -20,6 +20,10 @@ export class UserService {
     return this.http.get(this.url+'/'+id);
   }
 
+  ifRegistered(username:string,password:string) {
+    return this.http.post(this.url, username && password);
+  }
+
   // Add user
   addUser(user:User) {
     return this.http.post(this.url, user);

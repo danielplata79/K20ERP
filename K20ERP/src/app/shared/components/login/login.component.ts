@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { User, UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -24,8 +25,15 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getUsers!: User[];
+
+  validateForm() {
+    // const user = user.username;
+  }
+
   ingresar() {
-    console.log(this.form);
+    const a  = JSON.stringify(this.form.value)
+    console.log("este form es = a " + a);
     const user = this.form.value.user;
     const pass = this.form.value.password;
 
@@ -37,7 +45,7 @@ export class LoginComponent implements OnInit {
   }
 
     error() {
-      this._snackBar.open("Invalid User or Password", "Close", {
+      this._snackBar.open("Wrong username or password, try again", "Close", {
         duration: 135000,
         horizontalPosition: "right",
         verticalPosition: "bottom"
@@ -52,4 +60,6 @@ export class LoginComponent implements OnInit {
         this.router.navigate(["dashboard"]);
       }, 1500);
     }
+
+    
 }

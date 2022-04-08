@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const router = Router();
 const mysql2 = require("mysql2");
+const bodyParser = require("body-parser");
 
 const connection = mysql2.createConnection({
 	host: 'localhost',

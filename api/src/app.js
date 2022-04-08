@@ -7,6 +7,7 @@ const port = 3000;
 const mysql2 = require("mysql2");
 const figlet = require("figlet");
 const concurrently = require("concurrently");
+const bodyParser = require("body-parser");
 
 console.log("");
 console.log("---------------------------------------------------------------");
@@ -34,7 +35,7 @@ app.use(function(req, res, next) {
 	next();
 });
   
-  
+app.use(bodyParser.urlencoded({extended: false}));
 
 // app.use(express.urlencoded({extended: false}));
 
