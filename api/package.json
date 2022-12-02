@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "electron-start": "concurrently \"node ./src/app.js\" \"node ./src/views/main.js\"",
-    "dev": "nodemon src/app.js && livereload"
+    "dev": "nodemon src/app.js && livereload",
+    "dbstart": "node ./src/views/main.js"
   },
   "keywords": [],
   "author": "",

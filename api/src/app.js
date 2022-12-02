@@ -3,7 +3,7 @@ const livereload = require("livereload");
 const path = require("path");
 const app = express();
 const morgan = require("morgan");
-const port = 3000;
+
 const mysql2 = require("mysql2");
 const figlet = require("figlet");
 const concurrently = require("concurrently");
@@ -19,7 +19,7 @@ console.log("---------------------------------------------------------------");
 console.log("");
 
 // Settings
-app.set("port", 3000);
+app.set("port", 3600);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", 'ejs');
 
