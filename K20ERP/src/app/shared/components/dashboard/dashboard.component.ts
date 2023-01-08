@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
   ListUser!: User[];
   
   // Table Data
-  displayedColumns: string[] = ['id', 'username', 'password'];
+  displayedColumns: string[] = ['id', 'username', 'name','password', 'mail'];
   dataSource = new MatTableDataSource(this.ListUser);
   
 
@@ -41,8 +41,6 @@ export class DashboardComponent implements OnInit {
       this.UserService.getUsers().subscribe(
         res => {
           var a = res;
-          console.log("reading from here!");
-          console.log("La respuesta es a = " + a);
           console.log(res);
           this.ListUser=<any>res;
           this.dataSource.data = res as User[];

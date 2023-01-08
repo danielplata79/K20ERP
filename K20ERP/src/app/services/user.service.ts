@@ -12,7 +12,7 @@ export class UserService {
 
   // List all users
   getUsers() {
-    return this.http.get(this.url);
+    return this.http.get(this.url+'/models/user');
   }
 
   // Get user
@@ -26,7 +26,7 @@ export class UserService {
 
   // Add user
   addUser(user:User) {
-    return this.http.post(this.url, user);
+    return this.http.post(this.url+'/models/user', user);
   }
 
   // Delete user
@@ -40,8 +40,11 @@ export class UserService {
   }
 }
 
+// Interface for dashboard component table 
 export interface User {
   id?:string;
   username?:string;
+  name?:string;
   password?:string;
+  mail?:string;
 };

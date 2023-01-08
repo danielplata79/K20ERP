@@ -1,13 +1,37 @@
+<body>
+    <h1>REGISTRAR NUEVO : Usuario</h1>
 
-    <h2>Registrar nuevo : Usuario</h2>
-    <hr>
-    <form >
-        <input placeholder="Nombre">
+    <form [formGroup]="form" (ngSubmit)="sendingData()">
+        <br><br>
+        <mat-form-field appearence="fill" class="ancho">
+            <mat-label>Username</mat-label>
+            <input matInput autocomplete="off" formControlName="username" type="text">
+            <mat-icon matSuffix>subject icon</mat-icon>
+        </mat-form-field>
         <br>
-        <input placeholder="Apellido">
+        <mat-form-field appearence="fill" class="ancho">
+            <mat-label>Full Name</mat-label>
+            <input matInput autocomplete="off" formControlName="name" type="text">
+            <mat-icon matSuffix>subject icon</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearence="fill" class="ancho">
+            <mat-label>Password</mat-label>
+            <input matInput autocomplete="off" formControlName="password" type="password">
+            <mat-icon matSuffix>subject icon</mat-icon>
+        </mat-form-field>   
+        <br>
+        <mat-form-field appearence="fill" class="ancho">
+            <mat-label>E-Mail</mat-label>
+            <input matInput autocomplete="off" formControlName="mail" type="password">
+            <mat-icon matSuffix>subject icon</mat-icon>
+        </mat-form-field>   
+        <hr>
+        <div id="action-buttons">
+            <button mat-button type="submit">Guardar</button>&nbsp; &nbsp;
+            <button mat-button [mat-dialog-close]="true">Cancelar</button>
+        </div>
     </form>
-    <hr>
-    <div id="action-buttons">
-        <button mat-button type="submit">Guardar</button>&nbsp; &nbsp;
-        <button mat-button [mat-dialog-close]="true">Cancelar</button>
-    </div>
+    
+
+</body>

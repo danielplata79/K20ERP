@@ -32,7 +32,8 @@ export class LoginComponent implements OnInit {
   }
 
   ingresar() {
-    const a  = JSON.stringify(this.form.value)
+    const b  = JSON.stringify(this.form.value.user)
+    const a = this.form.value.user;
     console.log("este form es = a " + a);
     const user = this.form.value.user;
     const pass = this.form.value.password;
